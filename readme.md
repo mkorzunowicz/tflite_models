@@ -12,3 +12,4 @@ optimized for ARM
 shasum -a 256 sao/*.tflite
 
 Get-FileHash -Algorithm SHA256 .\sao\*.tflite | ForEach-Object { "{0}  {1}" -f $_.Hash.ToLower(), (Split-Path $_.Path -Leaf) }
+
